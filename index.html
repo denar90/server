@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Realtime communication with WebRTC</title>
+
+  <link rel="stylesheet" href="css/main.css" />
+
+</head>
+
+<body>
+
+  <p>My user name</p>
+  <input type="text" id="user" value="user2">
+
+  <div>
+    <p>Me</p>
+    <video id="localVideo" width="200" autoplay></video>
+  </div>
+  <div>
+    <p>User I'm calling to</p>
+    <video id="remoteVideo" width="200" autoplay></video>
+  <div>
+
+  <div>
+    </p><button id="callButton">Call to </button> <input type="text" id="target" value="user"></p>
+    <p><button id="hangupButton">Hang Up</button></p>
+  </div>
+
+
+</body>
+
+  <script src="//webrtc.github.io/adapter/adapter-latest.js"></script>
+  <script src="/node_modules/socket.io-client/socket.io.js"></script>
+  <script src="js/main.js"></script>
+
+</html>
